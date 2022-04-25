@@ -1,0 +1,20 @@
+footer{
+    background-color: #343434;
+    color: white;
+    padding: 20px;
+
+    & h3{
+        font-family: 'Shrikhand';
+        font-size: 17px;
+    }
+    & ul{
+        padding: 0;
+        margin: 0;
+        & li{
+            margin-bottom: 5px;
+            & i{
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+button{
+    background: linear-gradient($secondary, $primary);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    margin-top: 15px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient($dark-secondary-color, $dark-primary-color);
+        transform: scale(1.02);
+        transition: 300ms;
+    }
+}
+
+.button-home{
+    padding: 18px;
+}
+
+.container-button-command{
+    display: flex;
+    justify-content: center;
+    & .button-command{
+        padding: 20px 50px;
+    }
+}

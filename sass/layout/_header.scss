@@ -1,0 +1,22 @@
+header{
+    width: 100%;
+    & .logo{
+        display: flex;
+        justify-content: center;
+        & img{
+            width: 50%;
+            padding: 15px;
+        }
+    }
+
+    & .localisation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EDEDED;
+        box-shadow: inset 0px 3px 7px -6px rgba(0, 0, 0, 0.589);
+        & i{
+            margin-right: 15px;
+        }
+    }
+}
