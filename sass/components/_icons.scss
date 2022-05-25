@@ -12,10 +12,19 @@
     &:hover{
         background: -webkit-linear-gradient($dark-secondary-color, $dark-primary-color);
         -webkit-background-clip: text;
+        transform: scale(1.1);
+        transition: 300ms;
+        animation: heart 500ms;
     }
 }
 
 .check{
     font-size: 25px;
     color: white;
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+.block-menu-card:hover .check {
+    transform: rotate(0);
   }
