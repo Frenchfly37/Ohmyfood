@@ -12,9 +12,8 @@
     &:hover{
         background: -webkit-linear-gradient($dark-secondary-color, $dark-primary-color);
         -webkit-background-clip: text;
-        transform: scale(1.1);
         transition: 300ms;
-        animation: heart 500ms;
+        animation: pinkheart 500ms;
     }
 }
 

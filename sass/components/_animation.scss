@@ -9,7 +9,7 @@
     }
 }
 
-@keyframes heart {
+@keyframes pinkheart {
     from {
         opacity:0;
     }
@@ -17,3 +17,22 @@
         opacity:1;
     }
 }
+
+@keyframes checkboxSize {
+    from {
+        width: 0px;
+    }
+    to {
+     width: 70px;
+    }
+}
+
+@keyframes ellipsisSize{
+    from{
+        width: 302px;
+    }
+    to {
+        
+    }
+}
+    

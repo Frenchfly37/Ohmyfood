@@ -59,18 +59,20 @@
             display: flex;
             flex-direction:row ;
             justify-content: space-between;
-            & .overflow-ellipsis{
-                text-overflow: ellipsis;
-            }
         }
         & h3,p{
             margin: 4px;
+        }
+        &  .overflow-ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     & .menu-check{
         height: 65px;
         width: 0px;
-        transition: width 1s;
+        animation: 1s;
         color: white;
         background-color: #99E2D0;
         overflow: hidden;
@@ -81,4 +83,16 @@
     .block-menu-card:hover .menu-check{
         width: 70px;
     }
+/*
+    .block-menu-card:hover .menu-card{
+        width: 300px;
+    }
+*/
+}
+
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:992px){
+  
 }

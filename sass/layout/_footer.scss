@@ -12,9 +12,16 @@ footer{
         margin: 0;
         & li{
             margin-bottom: 5px;
+            &:hover{
+                color: $secondary;
+            }
             & i{
                 margin-right: 10px;
             }
         }
     }
 }
+@media screen and (min-width:768px){
+    }
+@media screen and (min-width:992px){
+    }

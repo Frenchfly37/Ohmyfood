@@ -11,6 +11,12 @@ body {
 a {
   color: inherit; }
 
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 992px; } }
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1920px; } }
 header {
   width: 100%; }
   header .logo {
@@ -59,7 +65,12 @@ header {
   border-radius: 20px 20px 0 0;
   margin-top: -30px;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  /*
+      .block-menu-card:hover .menu-card{
+          width: 300px;
+      }
+  */ }
   .container-Menu .container-Menu__title {
     display: flex;
     flex-direction: row;
@@ -97,14 +108,16 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      .container-Menu .menu-card .menu-card-row .overflow-ellipsis {
-        text-overflow: ellipsis; }
     .container-Menu .menu-card h3, .container-Menu .menu-card p {
       margin: 4px; }
+    .container-Menu .menu-card .overflow-ellipsis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .container-Menu .menu-check {
     height: 65px;
     width: 0px;
-    transition: width 1s;
+    animation: 1s;
     color: white;
     background-color: #99E2D0;
     overflow: hidden;
@@ -126,6 +139,8 @@ footer {
     margin: 0; }
     footer ul li {
       margin-bottom: 5px; }
+      footer ul li:hover {
+        color: #FF79DA; }
       footer ul li i {
         margin-right: 10px; }
 
@@ -317,9 +332,8 @@ button {
   .heart-pink:hover {
     background: -webkit-linear-gradient(#ff60d3, #8641d8);
     -webkit-background-clip: text;
-    transform: scale(1.1);
     transition: 300ms;
-    animation: heart 500ms; }
+    animation: pinkheart 500ms; }
 
 .check {
   font-size: 25px;
@@ -337,10 +351,18 @@ button {
   to {
     transform: translateY(0px);
     opacity: 1; } }
-@keyframes heart {
+@keyframes pinkheart {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes checkboxSize {
+  from {
+    width: 0px; }
+  to {
+    width: 70px; } }
+@keyframes ellipsisSize {
+  from {
+    width: 302px; } }
 
 /*# sourceMappingURL=style.css.map */
